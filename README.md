@@ -30,20 +30,6 @@ Everything runs inside Docker containers — no manual scripts, no forgetting to
 
 `Python` · `Docker` · `Docker Compose` · `PostgreSQL` · `Apache Airflow` · `psycopg2` · `python-dotenv`
 
-## Project Structure
-
-```
-weather-etl-pipeline/
-├── dags/
-│   └── weather_dag.py       # Airflow DAG — defines the schedule & task
-├── scripts/
-│   ├── extract.py            # Pulls data from the API
-│   ├── transform.py          # Cleans & structures the data
-│   └── load.py                # Pushes data into PostgreSQL
-├── docker-compose.yml         # Spins up Airflow + Postgres
-└── README.md
-```
-
 ## Real Problems Solved While Building This
 
 This wasn't a copy-paste tutorial project. Debugging it end-to-end meant working through:
